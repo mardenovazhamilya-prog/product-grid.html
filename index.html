@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Grid</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    margin: 20px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+button{
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: darkblue;
+}
+
+@media (min-width:768px){
+
+.products{
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media (min-width:1024px){
+
+.products{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="Товар">
+<h2>romand - Glasting Melting Balm - 7 Colors</h2>
+<p>6500 ₸</p>
+<button>добавить к корзину</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="Товар">
+<h2>Телефон</h2>
+<p>420 000 ₸</p>
+<button>Купить</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="Товар">
+<h2>Наушники</h2>
+<p>85 000 ₸</p>
+<button>Купить</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="Товар">
+<h2>Часы</h2>
+<p>170 000 ₸</p>
+<button>Купить</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="Товар">
+<h2>Планшет</h2>
+<p>290 000 ₸</p>
+<button>Купить</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200" alt="Товар">
+<h2>Камера</h2>
+<p>390 000 ₸</p>
+<button>Купить</button>
+</div>
+
+</div>
+
+</body>
+</html>
